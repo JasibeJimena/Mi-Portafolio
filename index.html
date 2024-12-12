@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Español -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linkeado -->
+  <!-- CDN BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- ICONOS BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Fav Icon -->
+  <!-- Para poner el icono en que se vea del lado del nombre en la pagina/Nota: agregarlo a pinterest -->
+  <link rel="shortcut icon" href="icons/star-fill.svg" type="image/x-icon">
+  <!-- Archvo Css -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap"
+    rel="stylesheet">
+  <title>JASIBE JIMENA SEGUNDO GALINDO</title>
+</head>
+<script src="main.js" defer></script>
+
+<body>
+  <header>
+    <div class="px-3 py-2 text-bg-border-bottom">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none fs-3">
+            <!-- Icono -->
+            <i class="bi bi-star-fill p-3f fs-3 p-3"></i>
+            Página Web Personal ^.^
+          </a>
+          <!-- En esta pate falta linkear con el #Id/varios como habilidades -->
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small concepto">
+            <li>
+              <!-- Revisar cuadros de hover -->
+              <a id="#perfil" href="#" class="nav-link text-black">
+                <svg class="bi d-block mx-auto mb-3" width="24" height="24">
+                  <use xlink:href="#home"></use>
+                </svg>
+                Acerca de mí
+              </a>
+            </li>
+            <li>
+              <a href="#habilidades" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-3" width="24" height="24">
+                  <use xlink:href="#speedometer2"></use>
+                </svg>
+                Habilidades
+              </a>
+            </li>
+            <li>
+              <a href="#proyectos" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-3" width="24" height="24">
+                  <use xlink:href="#table"></use>
+                </svg>
+                Proyecto
+              </a>
+            </li>
+            <li>
+              <a href="#testimonios" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-3" width="24" height="24">
+                  <use xlink:href="#grid"></use>
+                </svg>
+                Colaboraciones
+              </a>
+            </li>
+            <li>
+              <a href="#contacto" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-3" width="24" height="24">
+                  <use xlink:href="#people-circle"></use>
+                </svg>
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!--Heroo-->
+    <div class="hero">
+      <!-- Padding en x=px Padding en y= py -->
+      <div id="perfil" class="px-4 py-5 my-5 text-center">
+        <!-- Imagen personal-->
+        <img class="d-block mx-auto mb-5 rounded-circle" src="imagenes/yo.jpg " alt="100" width="200" height="250">
+        <h1 class="display-5 fw-bold"> Jasibe Jimena Segundo Galindo</h1>
+        <!-- texto typewriter-->
+        <h2 id="app"></h2>
+        <div class="col-lg-6 mx-auto">
+          <!-- Informacion personal -->
+          <p class="lead mb-4 text-center">Soy una persona feliz de aprender, organizada, responsable, simpatica con intenciones
+            de mejorar cosas nuevas. Me interesan los retos donde pueda contibuir nuevos proyectos y asi seguir aprendiendo...</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <!-- Para poner eñ link de mi cv -->
+            <button type="button" class="btn-lg px-4 gap-2 boton-cv">Conoce mi trayectoria</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Habilidades -->
+    <div id="habilidades" class="caja-habilidades">
+      <div class="habilidades container px-4 py-5" id="hanging-icons habilidades">
+        <h2 class="pb-2 border-bottom">Habilidades</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="bi bi-laptop fs-3"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Programación </h3>
+              <p>(lenguajes C, C++, Ciencias de Datos, Java) ... </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="bi bi-badge-3d-fill fs-3"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Modelado </h3>
+              <p> Agrega una pequeña descripción de este a partado puedes preguntarle a chat...</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="bi bi-globe2 fs-3"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Desarrollo Fronted</h3>
+              <p>Agrega una pequeña descripción de este a partado puedes preguntarle a chat... </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyectos -->
+    <div id="proyectos" class="proyectos container mt-5">
+      <!-- División de sección -->
+      <h2 class="pb-2 border-bottom">Proyectos</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <!-- Imagen 1:Login-->
+            <img class="bd-placeholder-img card-img-top" src="imagenes/login.png"
+              alt="Muestra el primer sitio que hice">
+            <div class="card-body">
+              <p class="Mi primer sitio web">Mi primer login</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyecto"><a target="_blank"
+                      href="https://login-taupe-three.vercel.app/">Ver</a></button>
+                  <button type="button" class="btn btn-proyecto btn-sm btn-outline-secondary"><a target="_blank"
+                      href="https://github.com/JasibeJimena/login">Github</a></button>
+                </div>
+                <!-- Agregar el lenguaje de programacion -->
+                <small class="text-body-secondary">HTML, JS y CSS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- agregar card -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- Imagen 2: Pinterest clon -->
+            <img class="bd-placeholder-img card-img-top" src="imagenes/pinteres.png" alt="">
+            <div class="card-body">
+              <p class="Clon de Pinterest"> Clon de Pinterest</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <!-- Botones para visualizar detalles del proyecto -->
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                      href="https://pinterest-clon-mu-peach.vercel.app/">Ver</a></button>
+                    
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                      href="https://github.com/JasibeJimena/pinterest-clon">Github</a></button>
+                </div>
+                <!-- Lenguaje de programación -->
+                <small class="text-body-secondary">HTML & CSS</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- agregar card -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- Imagen 3: Listado Tareas -->
+            <img class="bd-placeholder-img card-img-top" src="imagenes/estructura.png" alt="">
+            <div class="card-body">
+              <p class="Lista tareas">Estructura de Control en PHP</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <!-- Botones para visualizar detalles del proyecto -->
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                      href="https://sisstemas-jasibe-jimenas-projects.vercel.app/">Ver</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                      href="https://github.com/JasibeJimena/Sisstemas">Github</a></button>
+                </div>
+                <!-- Lenguaje de programación -->
+                <small class="text-body-secondary">HTML, JS Y PHP </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- agregar card -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- Imagen 4: Agente Inteligente-->
+            <img class="bd-placeholder-img card-img-top" src="imagenes/inteligente.png" alt="">
+            <div class="card-body">
+              <p class="Predictor de arritmias">Agente Inteligente</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <!-- Botones para visualizar detalles del proyecto -->
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                      href="https://agente-inteligente-ten.vercel.app/">Ver</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                      href="https://github.com/JasibeJimena/Agente-Inteligente">Github</a></button>
+                </div>
+                <!-- Lenguaje de programación -->
+                <small class="text-body-secondary">Python y Nelogo </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- agregar card -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <!-- Imagen 5: Carro controlador por APP -->
+              <img class="bd-placeholder-img card-img-top" src="imagenes/carro.png" alt="">
+              <div class="card-body">
+                <p class="Wavelet vs ECG">Carro controlador por APP </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <!-- Botones para visualizar detalles del proyecto -->
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                        href="https://carro-controlador-por-app.vercel.app/">Ver</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                        href="https://github.com/JasibeJimena/Carro-Controlador-por-APP">Github</a></button>
+                  </div>
+                  <!-- Lenguaje de programación -->
+                  <small class="text-body-secondary">Arduino y App Inventor</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- agregar card -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <!-- Imagen 6: Mi portafolio-->
+                <img class="bd-placeholder-img card-img-top" src="icons/LSTM.png" alt="">
+                <div class="card-body">
+                  <p class="Generador de texto">Mi Portafolio</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <!-- Botones para visualizar detalles del proyecto -->
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                          href="">Ver</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank"
+                          href="">Github</a></button>
+                    </div>
+                    <!-- Lenguaje de programación -->
+                    <small class="text-body-secondary">HTML, CSS y JavaScrip</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+      </div>
+    </div>
+
+    <!-- Testimonios -->
+    <div id="testimonios" class="testimonios container mt-5">
+      <!-- mt=margin top/margen de 4 -->
+      <h2 class="pb-2 border-bottom">Colaboraciones</h2>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Solo el que queremos aparezca primero va ser el active que va a mostrar -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- Card -->
+              <div class="card border-0" style="width: 20rem;">
+                <img src="imagenes/Anel.jpg" class="card-img-top rounded-circle" alt="...">
+
+                <h4 class="card-title"> Anel Montes de Oca</h4>
+                <h5 class="card-subtitle">Mentora en Tecnolochicas Pro </h5>
+
+                <div class="card-body">
+                  <p class="card-tex"> Jimena muestra un rápido progreso en la adquisición de habilidades técnicas clave y una gran disposición para colaborar en proyectos. 
+                  Su actitud positiva y su voluntad de aprender constantemente son cualidades valiosas en el campo de la programación.
+                  No tengo dudas de que seguirá creciendo y haciendo contribuciones significativas como desarrolladora frontend en el futuro.</p>
+                </div>
+              </div>
+              <!-- fin card -->
+            </div>
+          </div>
+
+      
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- Card -->
+              <div class="card border-0" style="width: 20rem;">
+                <img src="imagenes/Paulina.jpg" class="card-img-top rounded-circle" alt="...">
+                <h4 class="card-title"> Paulina Guzman</h4>
+                <h5 class="card-subtitle">Estudiante ingeniería biomédica </h5>
+                <div class="card-body">
+                  <p class="card-tex"> Jimena es una excelente organizadora de tiempo a la hora de trabajar con proyectos de investigación,
+                es una cascada andante a la hora de pensar, pues ideas de solución a los problemas que se le presentan surgen sin medida. 
+                Sabe colaborar en actividades de equipo siendo siempre un elemento clave en cualquier posición del juego. Su capacidad de 
+                crecimiento ha sido trabajada arduamente y de forma constante, lo que indica el interés mismo y el potencial mismo de evolución. 
+                Busca siempre actualizarse en temas de su interés, lo que le permite tener ideas innovadoras y analizar su aplicación en distintos escenarios.</p>
+                </div>
+              </div>
+              <!-- fin card -->
+            </div>
+          </div>
+
+         
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <!-- Card -->
+              <div class="card border-0" style="width: 20rem;">
+                <img src="imagenes/Karina.jpg" class="card-img-top rounded-circle" alt="...">
+                <h4 class="card-title"> Karina Fuentes</h4>
+                <h5 class="card-subtitle">Estudiante ingeniería biomédica </h5>
+                <div class="card-body">
+                  <p class="card-text">Jimena es una excelente profesional. Su capacidad para trabajar en equipo es admirable; 
+                    siempre está dispuesta a colaborar y aportar ideas creativas a cada proyecto. Además es una persona muy responsable y amable con todos a su alrededor, 
+                    lo que la convierte en una líder nata. Es capaz de guiar a un equipo motivando a todos a participar activamente. Su habilidad para coordinar tareas y
+                     asegurar que todos trabajemos de manera conjunta creando un ambiente muy positivo y colaborativo.</p>
+                </div>
+              </div>
+              <!-- fin card -->
+            </div>
+          </div>
+
+          <div class="carousel-item ">
+            <div class="d-flex justify-content-center">
+              <!-- Card -->
+              <div class="card border-0" style="width: 20rem;">
+                <img src="imagenes/Sofia.jpg" class="card-img-top rounded-circle" alt="...">
+                <h4 class="card-title"> Sofia Iñiguez</h4>
+                <h5 class="card-subtitle">Estudiante ingeniería biomédica </h5>
+                <div class="card-body">
+                  <p class="card-text">Trabajar con Jimena es sinónimo de un trabajo en equipo con compromiso y excelencia. 
+                    Ya que es una persona responsable que constantemente participa para encontrar soluciones a las distintas 
+                    problemáticas que van surgiendo. Es amable,  lo que hace sencilla la comunicación eficiente. Estoy convencida 
+                    de que Jimena siempre buscará la forma de que el proyecto salga en pie, alentando al equipo y buscando herramientas
+                     que les ayuden a crecer como equipo y como persona.</p>
+                </div>
+              </div>
+              <!-- fin card -->
+            </div>
+          </div>
+
+          
+
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <!-- Card -->
+              <div class="card border-0" style="width: 20rem;">
+                <img src="imagenes/Astrid.jpg" class="card-img-top rounded-circle" alt="...">
+                <h4 class="card-title"> Astrid Avila</h4>
+                <h5 class="card-subtitle">Estudiante ingeniería biomédica </h5>
+                <div class="card-body">
+                  <p class="card-text">Llevo alrededor de 10 años conociendo a Jimena, y puedo asegurar que desde siempre ha sido una persona muy 
+                    disciplinada y trabajadora, que siempre busca hacer su trabajo lo más estructurado y limpio posible. Además, ella es una persona 
+                    de mucha confianza y sin duda el trabajo en equipo es uno de sus puntos fuertes. Recomiendo ampliamente el trabajo en conjunto con ella. </p>
+                </div>
+              </div>
+              <!-- fin card -->
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Contacto -->
+      <div id="contacto" class="px-4 py-5 my-5 text-center">
+        <i class="d-block mx-auto mb-4 fs-1 bi bi-envelope-check-fill"></i>
+        <h1 class="display-5 fw-bold text-body-emphasis">Contáctame</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4"> Inicia conmigo ahora mismo un proyecto de desarollo fronted </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="jasibejimena@gmail.com.com">
+              <button id="btn-contacto" type="button" class="btn btn-lg px-4 gap-3">Mandar correo
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+  </main>
+  <!-- Fuera del main -->
+  <!-- Footer -->
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"> <i class="fs-3 bi bi-github"></i><a href="https://github.com/JasibeJimena" target="_blank" class="nav-link px-4 "></a></li>
+     <!-- Checar por que los href no me llevan a las direcciones desde los iconos -->
+      <li class="nav-item"><i class="fs-3 bi bi-linkedin"></i><a href="www.linkedin.com/in/jimena-segundo-5441b325a" class="nav-link px-4 "></a></li>
+      <li class="nav-item"><i class="fs-3 bi bi-discord"></i><a href="segundo.xim" class="nav-link px-4 "></a></li>  
+      <li class="nav-item"><i class="fs-3 bi bi-whatsapp"></i><a href="https://wa.me/6672940266"target="_blank" class="nav-link px-2 "></a></li>
+    </ul>
+    <p class="text-center">Creado por Jasibe Jimena Segundo Galindo en el bootcamp de Tecnolochicas Pro Noviembre/Diciembre-2024</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script scr="main.js"></script>
+</body>
+
+</html>

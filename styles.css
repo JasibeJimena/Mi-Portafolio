@@ -1,0 +1,93 @@
+:root {
+    /* Manera de poner los colores */
+    --color-primario: #092b5a;
+    --color-secundario: #09738a;
+    --color-terciario:#78a890;
+    --backg: #e7d9b4;
+    --color-input:#9ed1b7;
+    --color-input2: #073d57;
+    --text-size: 1.5rem;
+    --color-text: #0000;
+}
+*{
+    font-family: "Jost", serif;
+}
+header{
+    background-color: #5da9e7;
+}
+/* Para los iconos del footer */
+.nav-item {
+    color: rgb(34, 106, 201);
+}
+
+#perfil {
+color:rgb(44, 3, 16);
+}
+.concepto a:hover{
+    background-color: #5e8dd3;    
+}
+#app{
+    color:#74bef0;
+}
+.boton-cv{
+    background-color:#1a8ce9;
+    color:#dbbdd0;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 5px;
+    border-color: #7aa1f5;
+}
+.boton-cv:hover {
+    background-color: #628ee0;
+    border-color: #4580b1;
+}
+
+/* Para la sección de habilidades */
+.habilidades{
+    background-color: #68b7f8;
+
+}
+/* Clase btn */
+.btn{
+    background-color: rgb(246, 247, 248);
+}
+
+.btn a{
+    text-decoration: rgb(81, 0, 64);
+    color:rgb(81, 0, 64);
+}
+.card .card-title{
+    color:gray;
+}
+
+/* testimonios */
+.card-title{
+    text-align: center;
+    margin-top: 18px;
+}
+.card-subtitle{
+    text-align: center;
+}
+.card-body{
+    text-align: justify;
+    font-size: 16px;
+
+}
+
+#contacto{
+    background-color: #4ec5e9;
+}
+#contacto p{
+    color:antiquewhite;
+}
+#btn-contacto{
+    background-color: #f783ca;
+}
+#btn-contacto:hover{
+    background-color: rgb(3, 3, 3);
+    color: #f5eded;
+}
+/* Color del footer */
+footer p{
+    color:#0e0d0d;
+}
